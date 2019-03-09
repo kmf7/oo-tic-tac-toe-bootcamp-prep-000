@@ -38,7 +38,7 @@ class TicTacToe
       move(index,current_player)
       display_board
     else
-      turn
+      turn(index)
     end
   end
   def turn_count
