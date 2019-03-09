@@ -28,7 +28,7 @@ class TicTacToe
     @board[index] == "X" || @board[index] == "O"? true : false
   end
   def valid_move?(index)
-     !position_taken?
+    index.between?(0,8) && !position_taken?
   end
   def turn 
     puts "Please enter 1-9:"
